@@ -6,8 +6,8 @@
 #
 default: &default
   adapter: mysql2
-  username: <%= ENV['DB_USERNAME'] %>
-  password: <%= ENV['DB_PASSWORD'] %>
+  username: <%= ENV.fetch("DB_USERNAME") %>
+  password: <%= ENV.fetch("DB_PASSWORD") %>
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   timeout: 5000
 
@@ -25,4 +25,4 @@ test:
 production:
   <<: *default
   database: socmedapps
-  url: <%= ENV['CLEARDB_DATABASE_URL'] %>
+  url: <%= ENV.fetch("CLEARDB_DATABASE_URL") %>
