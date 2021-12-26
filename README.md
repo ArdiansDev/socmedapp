@@ -41,6 +41,14 @@ GET https://socmed-app.herokuapp.com/api/v1/message/open?userID=:id
 ```
 ![alt text](https://firebasestorage.googleapis.com/v0/b/ardiansdev.appspot.com/o/interac.PNG?alt=media&token=4c4b2df4-7f07-49dc-a204-42b58fc99068)
 
+DELETE MESSAGE
+```
+DELETE https://socmed-app.herokuapp.com/api/v1/message/:id
+```
+UPDATE MESSAGE
+```
+PUT https://socmed-app.herokuapp.com/api/v1/message/:id
+```
 
 * Ruby version
 
