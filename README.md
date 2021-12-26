@@ -35,6 +35,12 @@ GET https://socmed-app.herokuapp.com/api/v1/message
 ```
 ![alt text](https://firebasestorage.googleapis.com/v0/b/ardiansdev.appspot.com/o/read%20message.PNG?alt=media&token=d2e342b9-a8dc-4419-81c6-08d64c6327a9)
 
+Get message interacted with user ID
+```
+GET https://socmed-app.herokuapp.com/api/v1/message/open?userID=:id
+```
+![alt text](https://firebasestorage.googleapis.com/v0/b/ardiansdev.appspot.com/o/interac.PNG?alt=media&token=4c4b2df4-7f07-49dc-a204-42b58fc99068)
+
 
 * Ruby version
 
